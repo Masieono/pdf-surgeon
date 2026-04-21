@@ -189,7 +189,6 @@ export function renderAppShell(state = {}) {
                 <div class="settings-divider"></div>
                 <div class="settings-meta">
                   Version ${manifestVersion}
-                  <span><br>Vibe coded entirely with Codex 5.3</span>
                 </div>
               </div>
             </div>
