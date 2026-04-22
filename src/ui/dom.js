@@ -84,10 +84,6 @@ export function renderAppShell(state = {}) {
     return;
   }
 
-  const manifestVersion =
-    Number.isFinite(state?.manifestVersion) && state.manifestVersion > 0
-      ? Math.floor(state.manifestVersion)
-      : 1;
   const fileCount = Array.isArray(state.files) ? state.files.length : 0;
   const hasFiles = fileCount > 0;
   const isBusy = Boolean(state.runtime?.busy);
@@ -186,10 +182,6 @@ export function renderAppShell(state = {}) {
                   Factory Reset
                 </button>
 
-                <div class="settings-divider"></div>
-                <div class="settings-meta">
-                  Version ${manifestVersion}
-                </div>
               </div>
             </div>
           </div>
